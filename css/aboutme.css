@@ -1,0 +1,275 @@
+/*--Section Formatting--*/
+body{
+    background-color: #E1D3D4;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+@font-face{
+    font-family: "Montserrat-Medium";
+    src:url("/Users/marissabertrand/Documents/GitHub/UX_UI_HW_17/Montserrat/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: "Montserrat-Light";
+    src: url("/Users/marissabertrand/Documents/GitHub/UX_UI_HW_17/Montserrat/Montserrat-Light.ttf");
+}
+@font-face{
+    font-family: "OpenSans-Regular";
+    src: url("/Users/marissabertrand/Documents/GitHub/UX_UI_HW_17/Open_Sans/OpenSans-Regular.ttf");
+}
+/*--------*/
+
+/*Header*/
+.HeaderGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+.HeaderGrid .logo{
+    height: 100px;
+    padding-left: 50px;
+    position: relative;
+    background-color: black;
+    display: block;
+    justify-content: flex-start;
+}
+.HeaderGrid .logo #logoName{
+    color: #BF80AE;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 36px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.HeaderGrid .logo #logoTitle{
+    color: #BF80AE;
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size: 24px;
+    margin: 0 auto;
+}
+.HeaderGrid .logo #logoPageName{
+    color: #BF80AE;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 375px;
+}
+.HeaderGrid .menu{
+    height: 100px;
+    padding-right: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.HeaderGrid .menu a{
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+/*--------*/
+
+/*Body*/
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin: 75px auto;
+    background-color: #D9A3A3;
+    height: 675px;
+    width: 1240px;
+}
+p {
+    margin-bottom: 24px;
+}
+.body .Bio{
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 25px;
+    background-color: #D9A3A3;
+    width: 90%;
+    height: 500px;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 24px;
+    text-align: center;  
+}
+.body .Skills{
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 35px;
+    margin-right: 25px;
+    background-color: #D9A3A3;
+    width: 90%;
+    height: 400px;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+/*--------*/
+
+/*Footer*/
+
+.FooterGrid{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+.FooterGrid #copyName{
+    height: 50px;
+    padding-left: 50px;
+    color: white;
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.FooterGrid .externalLinks{
+    height: 50px;
+    padding-right: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.FooterGrid .externalLinks a{
+    color: white;
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 20px;
+}
+/*--------*/
+
+/*Mobile Media Query - Mobile*/
+@media (min-width: 280px) and (max-width: 600px){
+    /*Section Formatting - Media Query*/
+    body{
+        background-color: #E1D3D4;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    /*Header - Media Query*/
+    .HeaderGrid .logo{
+        height: 50px;
+        padding-left: 25px;
+        position: relative;
+        background-color: black;
+        display: block;
+        justify-content: flex-start;
+    }
+    .HeaderGrid .logo #logoName{
+        color: #BF80AE;
+        font-family: 'Montserrat-Medium', sans-serif;
+        font-size: 18px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    .HeaderGrid .logo #logoTitle{
+        color: #BF80AE;
+        font-family: 'Montserrat-Light', sans-serif;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .HeaderGrid .logo #logoPageName{
+        color: #BF80AE;
+        font-family: 'Montserrat-Medium', sans-serif;
+        font-size: 15px;
+        position: absolute;
+        bottom: 15px;
+        left: 170px;
+    }
+    .HeaderGrid .menu{
+        height: 50px;
+        padding-right: 25px;
+        background-color: black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .HeaderGrid .menu a{
+        font-family: 'OpenSans-Regular', sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+    }
+
+    /*Body - Media Query*/
+    .body {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-between;
+        margin: 25px 25px auto;
+        margin-bottom: 25px;
+        background-color: #D9A3A3;
+        width: 90%;
+    }
+    p {
+        margin-bottom: 12px;
+    }
+    .body .Bio{
+        justify-content: none;
+        align-items: center;
+        margin-top: 25px;
+        margin-left: 25px;
+        background-color: #D9A3A3;
+        width: 90%;
+        height: 100%;
+        font-family: 'OpenSans-Regular', sans-serif;
+        font-size: 18px;
+        text-align: center; 
+    }
+    .body .Skills{
+        justify-content: none;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 25px;
+        margin-right: 0px;
+        background-color: #D9A3A3;
+        width: 90%;
+        height: 100px;
+        font-family: 'OpenSans-Regular', sans-serif;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /*Footer - Media Query*/
+    .FooterGrid{
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+    }
+    .FooterGrid #copyName{
+        height: 50px;
+        padding-left: 25px;
+        color: white;
+        font-family: 'Montserrat-Light', sans-serif;
+        font-size: 18px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .FooterGrid .externalLinks{
+        padding-right: 25px;
+        background-color: black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .FooterGrid .externalLinks a{
+        color: white;
+        font-family: 'Montserrat-Light', sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        padding: 10px;
+    }
+}
